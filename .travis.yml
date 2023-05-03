@@ -7,3 +7,13 @@ before_install:
 
 script:
   - docker run -e CI=true williamszk/docker-react-udemy-grider npm run test
+
+deploy:
+  provider: elasticbeanstalk
+  region: 'us-east-1'
+  app: 'delete-me-application'
+  env: 'Delete-me-application-env'
+  bucket_name: 'elasticbeanstalk-us-east-1-770482222490'
+  bucket_path: 'delete-me-application'
+  on:
+    branch: master
