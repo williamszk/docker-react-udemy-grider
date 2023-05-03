@@ -17,7 +17,6 @@ function App() {
 				>
 					I was changed on the feature branch!
 				</a>
-				<p>Another thing to fix.</p>
 			</header>
 		</div>
 	);
