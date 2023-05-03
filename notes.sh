@@ -10,6 +10,8 @@ cd frontend
 touch Dockerfile.dev
 touch Dockerfile
 
+
+
 cd frontend
 sudo docker build -t william/my-study-image -f Dockerfile.dev .
 
